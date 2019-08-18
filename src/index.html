@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your Basket</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__logo" src="../assets/images/your-basket-logo.png" />
+  </header>
+  <main class="content">
+    <header class="content__header">
+      <div class="content__header__title-container">
+        <h1 class="content__header__title-text">Your Basket</h1>
+      </div>
+      <summary class="content__header__summary-container">
+        <p class="content__header__summary-text">Items you have added to your basket are shown below.</p>
+        <p class="content__header__summary-text">Adjust the quantities or remove items before continuing purchase</p>
+      </summary>
+    </header>
+    <section class="content__body">
+      <header class="content__body-header">
+        <span class="content__body-header-text">Product</span>
+        <span class="content__body-header-text">Price</span>
+        <span class="content__body-header-text">Qty</span>
+        <span class="content__body-header-text">Cost</span>
+      </header>
+      <section class="content__body__basket-container">
+        <div class="content__body__basket-item">
+          <label for="cotton-tshirt" class="content__body__basket-item-label">Cotton T-Shirt, Medium</label>
+          <span>&pound;
+            <span id="cotton-tshirt-price" class="content__body__basket-item-price">1.99</span>
+          </span>
+          <input id="cotton-tshirt" type="number" value="1" class="content__body__basket-item-qty" />
+          <span>&pound;
+            <span id="cotton-tshirt-cost" class="content__body__basket-item-cost">1.99</span>
+          </span>
+          <img src="../assets/images/rubbish-bin.svg" width="16px" height="16px" style="color: #F00"
+            class="content__body__basket-item-del" />
+        </div>
+        <div class="content__body__basket-item">
+          <label for="baseball-cap" class="content__body__basket-item-label">Baseball Cap, One Size</label>
+          <span>&pound;
+            <span id="baseball-cap-price" class="content__body__basket-item-price">2.99</span>
+          </span>
+          <input id="baseball-cap" type="number" value="2" class="content__body__basket-item-qty" />
+          <span>&pound;
+            <span id="baseball-cap-cost" class="content__body__basket-item-cost">5.98</span>
+          </span>
+          <img src="../assets/images/rubbish-bin.svg" width="16px" height="16px"
+            class="content__body__basket-item-del" />
+        </div>
+        <div class="content__body__basket-item">
+          <label for="swim-shorts" class="content__body__basket-item-label">Swim Shorts, Medium</label>
+          <span>&pound;
+            <span id="swim-shorts-price" class="content__body__basket-item-price">3.99</span>
+          </span>
+          <input id="swim-shorts" type="number" value="1" class="content__body__basket-item-qty" />
+          <span>&pound;
+            <span id="swim-shorts-cost" class="content__body__basket-item-cost">3.99</span>
+          </span>
+          <img src="../assets/images/rubbish-bin.svg" width="16px" height="16px"
+            class="content__body__basket-item-del" />
+        </div>
+      </section>
+      <section class="content__body__aggregate-container">
+        <div class="content__body__aggregate-value-container">
+          <span class="content__body__aggregate-value-label">Subtotal</span>
+          <span>&pound;
+            <span class="content__body__aggregate-value-price subtotal-price">11.99</span>
+          </span>
+        </div>
+        <div class="content__body__aggregate-value-container">
+          <span class="content__body__aggregate-value-label"><abbr title="Value-added tax">VAT</abbr>&commat; 20%</span>
+          <span>&pound;
+            <span class="content__body__aggregate-value-price vat-value">2.39</span>
+          </span>
+        </div>
+        <div class="content__body__aggregate-value-container">
+          <span class="content__body__aggregate-value-label">Total Cost</span>
+          <span>&pound;
+            <span class="content__body__aggregate-value-price total-price">14.35</span>
+          </span>
+        </div>
+      </section>
+    </section>
+    <footer class="content__footer">
+      <button class="btn btn--primary">Buy Now >></button>
+    </footer>
+  </main>
+  <footer class="footer">
+    <small class="footer__text">&copy;2019 InfiScale</small>
+  </footer>
+  <script src="./index.js" />
+  </body>
+
+</html>
