@@ -5,6 +5,10 @@
 
 window.onload = init
 
+console.log('awesome reached here')
+
+window.init = init
+
 function init() {
   const qtyInputElements = document.querySelectorAll('.content__body__basket-item-qty')
   const basketItemEl = document.querySelectorAll('.content__body__basket-item')
